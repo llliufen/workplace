@@ -4,7 +4,7 @@
  * 2.新建变量调用算法类。
  */
 require "stringPractice.php";
-$new = new \work\Sort();
+$new = new \work\Str();
 $new = new Str();
 $new1->strSub();
 
