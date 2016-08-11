@@ -90,6 +90,7 @@ class Str
         echo $str1, '.....'; //输出并加上省略号
     }
 }
+
 /**
  * Created by PhpStorm.
  * User: liufen
