@@ -5,7 +5,12 @@
  */
 require "stringPractice.php";
 $new = new \work\Str();
+<<<<<<< HEAD
 $new->strSub();
+=======
+$new = new Str();
+$new1->strSub();
+>>>>>>> 2e41450e77778a72ed4b865caeb99df61d47ba7e
 
 /**
  * Created by PhpStorm.

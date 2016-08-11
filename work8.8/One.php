@@ -3,7 +3,7 @@ namespace work;
 
 class Sort
 {
-    public function One()
+    public function Operation()
     {
         $empty = '';
         $null  = null;
@@ -14,7 +14,7 @@ class Sort
         $b     = $a++;
         echo $b; //$b的值为1
     }
-    public function Two()
+    public function maxNum()
     {
         $a   = 1;
         $b   = 2;
@@ -23,7 +23,7 @@ class Sort
         echo $max;
 
     }
-    public function Three()
+    public function Value()
     {
         $b = 201;
         $c = 40;
@@ -34,7 +34,7 @@ class Sort
      * 无输出结果，因为没有输出语句。
      * 加上输出语句后输出为2.
      */
-    public function Four($int)
+    public function ValueTwo($int)
     {
         $int    = $int * 2;
         $int    = 2;
@@ -42,7 +42,7 @@ class Sort
         return $result;
     }
 //因为在PHP中变量是以C语言的结构体来存储的，空字符串和NULL,false都是以值为0存储的
-    public function Five()
+    public function Compare()
     {
         $str1 = null;
         $str2 = false;
@@ -54,7 +54,19 @@ class Sort
         $str6 = '0';
         echo $str5 === $str6 ? '相等' : '不相等'; //结果是不相等
     }
-    public function Six()
+    /**
+         * 1.isset（）和empty（）的区别和使用场景：(php手册中解释：empty（）描述bool empty( mixed var )
+         * 如果 var 是非空或非零的值，则 empty() 返回 FALSE。
+         * 换句话说，”"、0、”0″、NULL、FALSE、array()、var $var;
+         * 以及没有任何属性的对象都将被认为是空的，如果 var 为空，则返回 TRUE。
+         * isset()检测变量是否设置，描述bool isset ( mixed var [, mixed var [, ...]] )
+         * 如果 var 存在则返回 TRUE，否则返回 FALSE。
+         * 如果已经使用 unset() 释放了一个变量之后，它将不再是 isset()。
+         * 若使用 isset() 测试一个被设置成 NULL 的变量，将返回 FALSE。
+         * 同时要注意的是一个 NULL 字节（”?”）并不等同于 PHP 的 NULL 常数。
+         * 警告: isset() 只能用于变量，因为传递任何其它参数都将造成解析错误。）
+         * */
+    public function Functions()
     {
         $a1 = null;
         $a2 = false;
@@ -89,7 +101,7 @@ class Sort
         echo get_count(); //输出0
         echo get_count(); //输出1
     }
-    public function Eight()
+    public function Exchange()
     {
         //将$a,$b想象为数周上的两点。
 
@@ -101,14 +113,14 @@ class Sort
         echo $a;
         echo $b;
     }
-    public function Nine()
+    public function Arrays()
     {
         //使用inplode函数连接。
         $arr = ['zhangsan', 'lisi', 'wangwu'];
         $str = implode(',', $arr);
         echo $str;
     }
-    public function Ten()
+    public function changeArray()
     {
         $arrOne = array(
             0 => array('fid' => 1, 'tid' => 1, 'name' => 'xiaoming'),
@@ -133,7 +145,7 @@ class Sort
         print_r($arrTwo);
         print_r($arrTen);
     }
-    public function Thirteen()
+    public function Index()
     {
 
         for ($i = 1; $i < 10; $i++) {
