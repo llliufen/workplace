@@ -24,16 +24,8 @@ if (isset($_SESSION['name'])) {
     header("Location: Login.php");
 }
 ?>
-        <a href="open.php"? data-action="post">退出</a>
+        <a href="Login.php"? data-action="post">退出</a>
 </body>
 </html>
-<?php
-/*//设置编码为UTF-8，以避免中文乱码
-header('Content-Type:text/html;charset=utf-8');
-session_start();
-setcookie('name', '', time() - 60);
-session_unset();
-session_destroy();
-unset($_SESSION['name']);
-header("Location: indexOne.php");
- */;?>
+
+

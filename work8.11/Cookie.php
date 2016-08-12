@@ -3,8 +3,8 @@ class Login
 {
     public function cookie()
     { //设置cookie的名字，值，时间和日期
-        setcookie("cookiename", "admin", time() + 60 * 60);
-        $_COOKIE["cookiename"];
+        setcookie("username", "admin", time() + 60 * 60);
+        echo $_COOKIE["username"];
         //调用只带有name参数的setcookie，那么名为这个cookie将从客户机删除
         setcookie("MyCookie");
         //设置Cookie的失效时间为time（）或者time（）-1
@@ -23,7 +23,7 @@ class Login
     }
 }
 $a = new Login();
-$a->session();
+$a->cookie();
 /**
  * Created by PhpStorm.
  * User: liufen
