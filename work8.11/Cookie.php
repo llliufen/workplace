@@ -1,5 +1,6 @@
 <?php
-class Login
+
+class Log
 {
     public function cookie()
     { //设置cookie的名字，值，时间和日期
