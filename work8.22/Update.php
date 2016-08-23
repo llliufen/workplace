@@ -5,7 +5,7 @@ if (isset($_POST['comit'])) {
     $password  = $_POST['password'];
     $comfirm   = $_POST['comfirm'];
     $sex       = $_POST['sex'];
-    $hobby     = $_POST['love'];
+    $hobby     = implode($_POST['love']);
     $location  = $_POST['city'];
     $photo     = $_POST['photo'];
     $introduce = $_POST['content'];
