@@ -5,10 +5,11 @@ if (isset($_POST['comit'])) {
     $password  = $_POST['password'];
     $comfirm   = $_POST['comfirm'];
     $sex       = $_POST['sex'];
-    $hobby     = $_POST['love'];
+    $hobby     = implode($_POST['love']);
     $location  = $_POST['city'];
     $photo     = $_POST['photo'];
     $introduce = $_POST['content'];
+
 //将传入的值传入数组中
     $arr = array('username' => $username, 'password' => $password, 'comfirm' => $comfirm, 'sex' => $sex, 'hobby' => $hobby, 'location' => $location, 'photo' => $photo, 'introduce' => $introduce);
 //判断传入的值是否为空
