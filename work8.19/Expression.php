@@ -7,8 +7,8 @@ class Expre
     public function expression($array)
     {
         foreach ($array as $row) {
-            preg_match('/^[a-zA-Z]\S*[0-9]$/', $row, $ss);
-            $arr[] = $ss;
+            preg_match('/^[a-zA-Z]\S*[0-9]$/', $row, $result);
+            $arr[] = $result;
         }
         return $arr;
     }
@@ -18,8 +18,8 @@ class Expre
     public function url($url)
     {
         $str = '@^(http://)(\w+.)(\w+.\w+.)(\w+.*)@i';
-        if (preg_match($str, $url, $test)) {
-            $arr[] = $test;
+        if (preg_match($str, $url, $result)) {
+            $arr[] = $result;
         }
         return $arr;
     }
@@ -29,8 +29,8 @@ class Expre
     public function expreHttp($url)
     {
         $str = '@http://\w+.\w+.\w+@i';
-        if (preg_match_all($str, $url, $test)) {
-            $arr = $test[0];
+        if (preg_match_all($str, $url, $result)) {
+            $arr = $result[0];
         }
         return $arr;
     }
